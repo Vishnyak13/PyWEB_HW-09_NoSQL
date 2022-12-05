@@ -1,5 +1,5 @@
-from mongo_db_assist.seed import get_all_contacts, get_contact_by_name, get_favorite_contacts, remove_contact, add_contact, \
-    update_contact
+from mongo_db_assist.seed import get_all_contacts, get_contact_by_name, get_favorite_contacts, remove_contact, \
+    add_contact, update_contact
 from mongo_db_assist.fake_data import fake_contacts
 
 
