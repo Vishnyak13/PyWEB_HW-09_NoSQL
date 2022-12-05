@@ -11,8 +11,8 @@ def main():
         print("1. Redis LRU Cache")
         print("2. MongoDB_personal_assistant")
         print("3. Exit")
-        user_input = int(input(">>>: "))
         try:
+            user_input = int(input(">>>: "))
             if user_input == 1:
                 time_calculation()
                 print()
@@ -25,7 +25,7 @@ def main():
             else:
                 print("Invalid choice! Please try again.")
         except ValueError:
-            print("Please enter a number")
+            print("Please enter a number!")
             main()
 
 
