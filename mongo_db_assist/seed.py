@@ -26,15 +26,15 @@ def get_favorite_contacts():
 
 
 def remove_contact(first_name, last_name):
-    contact = Contact.objects(first_name=first_name, last_name=last_name)
+    contact = Contact.objects.get(first_name=first_name, last_name=last_name)
     contact.delete()
-    return f'Contact {contact.first_name} {contact.last_name} deleted!'
+    return f'Contact {contact.full_name} removed from database!'
 
 
 def add_contact(**kwargs):
     contact = Contact(**kwargs)
     contact.save()
-    return f'Contact {contact.full_name} added!'
+    return f'Contact {contact.full_name} added to database!'
 
 
 def update_contact(**kwargs):
