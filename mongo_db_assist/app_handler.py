@@ -25,6 +25,8 @@ def match_case(choice):
                                  email=map(str, input('Enter email: ').split(',')),
                                  address=input('Enter address: '), birthday=input('Enter birthday (YYYY-MM-DD): '),
                                  favorite=input('Enter favorite (True/False): ')))
+        case _:
+            print('Invalid choice!')
 
 
 def run():
