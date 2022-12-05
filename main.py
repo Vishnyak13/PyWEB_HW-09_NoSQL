@@ -22,6 +22,8 @@ def main():
             elif user_input == 3:
                 print("Goodbye!")
                 break
+            else:
+                print("Invalid choice! Please try again.")
         except ValueError:
             print("Please enter a number")
             main()
